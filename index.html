@@ -1,0 +1,77 @@
+<!-- Coding By CodingNePAL - YOUTUBE.COM//CODINGNEPAL-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<!-- what does dir="ltr" mean ?-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Alarm Clock in JavaScript</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="innerContainer">
+            <div class="clockb">
+
+                <div class="circle" style=" --clr:bisque;" id="sc"><i></i></div>
+                <div class="circle circle2" style=" --clr:#fff;" id="mn"><i></i></div>
+                <div class="circle circle3" style=" --clr:#765341;" id="hr"><i></i></div>
+
+                <span style="--i:1"><b>1</b></span>
+                <span style="--i:2"><b>2</b></span>
+                <span style="--i:3"><b>3</b></span>
+                <span style="--i:4"><b>4</b></span>
+                <span style="--i:5"><b>5</b></span>
+                <span style="--i:6"><b>6</b></span>
+                <span style="--i:7"><b>7</b></span>
+                <span style="--i:8"><b>8</b></span>
+                <span style="--i:9"><b>9</b></span>
+                <span style="--i:10"><b>10</b></span>
+                <span style="--i:11"><b>11</b></span>
+                <span style="--i:12"><b>12</b></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="emptyClock"></div>
+        <h1>00:00:00 PM</h1>
+        <div class="content">
+            <div class="column">
+                <select>
+                    <option value="Hour" selected disabled hidden>Hour</option>
+                    <!-- Does selected have to be above ?-->
+                    <!-- <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option> -->
+                </select>
+            </div>
+            <div class="column">
+                <select>
+                    <option value="Minute" selected disabled hidden>Minute</option>
+                    <!-- Does selected have to be above ?-->
+                    <!-- <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option> -->
+                </select>
+            </div>
+            <div class="column">
+                <select>
+                    <option value="AM/PM" selected disabled hidden>AM/PM</option>
+                    <!-- Does selected have to be above ?-->
+                    <!-- <option value="AM">AM</option>
+                    <option value="PM">PM</option> -->
+                </select>
+            </div>
+        </div>
+        <button>Set Alarm</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
